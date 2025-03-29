@@ -16,7 +16,6 @@ const Books = () => {
     const newUrl = BaseURL + modifiedTitle;
     const titleresponse = await fetch(newUrl);
     const titleresult = await titleresponse.json();
-    console.log(titleresult);
     setBooksList(titleresult.docs);
   }
 
@@ -24,13 +23,8 @@ const Books = () => {
     const authorUrl = BaseURL1 + author;
     const authorresponse = await fetch(authorUrl);
     const authorresult = await authorresponse.json();
-    //console.log(authorresult);
     setBooksList(authorresult.docs);
   };
-
-  // useEffect(() => {
-  // fetchData()
-  // }, [author,title]);
 
   const fetchData = async () => {
     try {
@@ -47,7 +41,7 @@ const Books = () => {
         setLoading(false);
       }
     } catch (error) {
-      // console.log(error);
+      console.log(error);
     } finally {
       setLoading(false);
     }
