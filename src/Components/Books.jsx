@@ -69,10 +69,22 @@ const Books = () => {
 
   const renderList = (book, index) => {
     return (
-      <h6 key={index}>
-        TITLE:{book.title} AUTHOR:{book.author_name} PUBLISHED_YEAR:
-        {book.first_publish_year}
-      </h6>
+      <div className="BookContainer" key={index}>
+        <div className="ImageContainer">
+          <img
+            className="Image"
+            src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg"
+          />
+        </div>
+        <div className="DetailsContainer">
+          <h6>TITLE:{book.title}</h6>
+          <h6>AUTHOR:{book.author_name} </h6>
+          <h6>
+            PUBLISHED_YEAR:
+            {book.first_publish_year}
+          </h6>
+        </div>
+      </div>
     );
   };
 
@@ -104,61 +116,10 @@ const Books = () => {
           Reset
         </button>
         <h5>{message}</h5>
-
-        <div className="BookContainer">
-          
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-                      <ul>{booksList.slice(0, 1).map(renderList)}</ul>
-            </div>
-          </div>
-
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-            <ul>{booksList.slice(0, 1).map(renderList)}</ul>
-            </div>
-          </div>
-
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-            <ul>{booksList.slice(1, 2).map(renderList)}</ul>
-            </div>
-          </div>
-
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-            <ul>{booksList.slice(2, 3).map(renderList)}</ul>
-            </div>
-          </div>
-
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-            <ul>{booksList.slice(3, 4).map(renderList)}</ul>
-            </div>
-          </div>
-
-          <div className="content1">
-            <div className="Book1">
-              <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._AC_UF1000,1000_QL80_.jpg" />
-            <ul>{booksList.slice(4, 5).map(renderList)}</ul>
-            </div>
-          </div>
-        </div>
       </div>
-      {/* <ul>{booksList.map(renderList)}</ul> */}
+      <ul>{booksList.map(renderList)}</ul>
     </div>
   );
 };
 
 export default Books;
-
-{
-  /* {booksList.slice(0, 1).map((book, index) => (
-            <h6 key={index}><p>TITLE:{book.title} <br/><br/> AUTHOR:{book.author_name}<br/><br/>PUBLISHED_YEAR:{book.first_publish_year}</p></h6>
-          ))}   */
-}

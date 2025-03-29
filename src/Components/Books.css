@@ -12,16 +12,17 @@
 }
 
 .BookContainer {
-  height: 100%;
+  height: 150px;
   width: 100%;
   background-color: rgb(161, 129, 226);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; 
-  padding: 40px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
 }
 .Book1 {
   width: 200px;
@@ -40,6 +41,23 @@
   width: 100%; 
   height: 100%; 
 }
+.Image{
+  width: 98px;
+  height: 98px;
+}
+.ImageContainer{
+  width:100px;
+  height: 100px;
+  background-color: black;
+}
+.DetailsContainer{
+  width:250px;
+  height: 150px;
+  background-color: rgb(108, 26, 166);
+  align-items: center;
+  padding-top: 30px;
+}
+
 .content1  {
   width: 600px;
   height: 400px;
