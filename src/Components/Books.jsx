@@ -57,6 +57,7 @@ const Books = () => {
     setAuthor("");
     setTitle("");
     setMessage("");
+    setBooksList([]);
   };
 
   const handleInputTitle = (event) => {
