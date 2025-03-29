@@ -1,0 +1,102 @@
+.Library {
+
+  padding: 80px;
+  border-radius: 10px;
+  background-image: linear-gradient(#2f4680, #500ae4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.BookContainer {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(161, 129, 226);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Book1 {
+  width: 200px;
+  height: 300px;
+  flex-direction: row;
+ background: rgb(108, 26, 166);
+ display: flex;
+ align-items: center; 
+ padding-left: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-right: 10px;
+ gap : 50px;
+}
+.Book1 img {
+  width: 100%; 
+  height: 100%; 
+}
+.content1  {
+  width: 600px;
+  height: 400px;
+  background-color: rgb(108, 26, 166);
+  padding-top: 30px; 
+  gap:10px;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Library-title {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  font-size: 16px;
+  color:black;
+  background: #ebfffc;
+  margin-bottom: 30px;
+}
+.submit-button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: #7a1ef7;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.Reset {
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #431288;
+  color: #ebfffc;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: medium;
+  margin-bottom: 30px;
+}
+
+
+
